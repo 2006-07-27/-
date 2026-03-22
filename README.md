@@ -1,8 +1,5 @@
-import os
-import json
-from datetime import datetime
 
-HTML_TEMPLATE = """<!DOCTYPE html>
+
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
@@ -406,19 +403,9 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     </script>
 </body>
 </html>
-"""
-
-def generate_resume():
-    filename = "index.html"
-    with open(filename, "w", encoding="utf-8") as f:
-        f.write(HTML_TEMPLATE)
-    print(f"✅ 简历已生成: {filename}")
-    print(f"📅 最后更新日期: {datetime.now().strftime('%Y-%m-%d')}")
-    
-    
 
 ---
-最后更新：""" + datetime.now().strftime("%Y-%m-%d")
+最后更新：""" 2026.3.22")
 
 
     generate_resume()# -
