@@ -415,46 +415,10 @@ def generate_resume():
     print(f"✅ 简历已生成: {filename}")
     print(f"📅 最后更新日期: {datetime.now().strftime('%Y-%m-%d')}")
     
-    readme = """# 王修颐个人简历网页
-
-简约蓝色风格的在线简历，支持中英文切换。
-
-## 功能特点
-- 中英文双语切换，自动记忆语言偏好
-- 响应式设计，适配手机和电脑
-- 蓝色简约风格，美观大方
-- 展示教育经历、个人经历、志愿服务等信息
-
-## 快速部署到GitHub Pages
-
-1. 将此仓库推送到GitHub
-2. 进入仓库 Settings → Pages
-3. 在 Branch 选择 main 分支，点击 Save
-4. 访问 `https://你的用户名.github.io/仓库名/` 即可查看简历
-
-## 本地预览
-
-直接在浏览器中打开 `index.html` 文件即可预览。
-
-## 自定义修改
-
-编辑 `index.html` 文件中的内容即可更新简历信息。
+    
 
 ---
 最后更新：""" + datetime.now().strftime("%Y-%m-%d")
 
-    with open("README.md", "w", encoding="utf-8") as f:
-        f.write(readme)
-    print("✅ README.md 已生成")
-    
-    print("\n🎉 所有文件已准备就绪！")
-    print("\n下一步：")
-    print("git init")
-    print("git add .")
-    print("git commit -m 'Add bilingual resume'")
-    print("git remote add origin https://github.com/你的用户名/仓库名.git")
-    print("git push -u origin main")
-    print("\n然后在 GitHub 仓库 Settings → Pages 中启用即可")
 
-if __name__ == "__main__":
     generate_resume()# -
